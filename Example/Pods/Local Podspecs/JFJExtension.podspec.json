@@ -1,0 +1,22 @@
+{
+  "name": "JFJExtension",
+  "version": "0.1.0",
+  "summary": "A short description of JFJExtension.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/skykywind/JFJExtension",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "skykywind": "824214765@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/skykywind/JFJExtension.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "JFJExtension/Classes/**/*"
+}
