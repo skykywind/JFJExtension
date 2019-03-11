@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import JFJExtension
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+        _ = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
+            .addTo(view)
+            .config {
+                $0.addRounded(radius: 10, corners: [.topLeft, .bottomRight])
+                $0.backgroundColor = UIColor.red
+        }
     }
 
     override func didReceiveMemoryWarning() {
