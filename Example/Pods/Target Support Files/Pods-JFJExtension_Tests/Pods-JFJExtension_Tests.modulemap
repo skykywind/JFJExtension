@@ -1,4 +1,4 @@
-framework module Pods_JFJExtension_Tests {
+module Pods_JFJExtension_Tests {
   umbrella header "Pods-JFJExtension_Tests-umbrella.h"
 
   export *

@@ -20,12 +20,17 @@ class ViewController: UIViewController {
                 $0.addRounded(radius: 10, corners: [.topLeft, .bottomRight])
                 $0.backgroundColor = UIColor.red
         }
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        _ = UILabel()
+            .addTo(view)
+            .config({ (label) in
+                label.font = UIFont.systemFont(ofSize: 16)
+                label.text = "Hello world"
+            })
+            .layout({ (make) in
+                make.left.equalToSuperview().offset(100)
+                make.top.equalToSuperview().offset(300)
+                make.size.equalTo(CGSize(width: 100, height: 100))
+            })
     }
 
 }

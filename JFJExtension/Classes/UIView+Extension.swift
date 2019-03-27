@@ -126,8 +126,7 @@ public extension UIView {
 }
 
 
-// MARK: - ViewChainable
-extension UIView: ViewChainable {
+extension UIView {
     
     @discardableResult
     public func addTo(_ superView: UIView) -> Self {
@@ -145,11 +144,13 @@ extension UIView: ViewChainable {
     
 }
 
+extension UIView: ViewChainable {}
+
 public protocol ViewChainable {}
 public extension ViewChainable where Self: UIView {
-    
+
     @discardableResult
-    func config(_ config: (Self) -> Void) -> Self {
+    public func config(_ config: (Self) -> Void) -> Self {
         config(self)
         return self
     }

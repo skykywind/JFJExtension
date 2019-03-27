@@ -1,4 +1,4 @@
-framework module JFJExtension {
+module JFJExtension {
   umbrella header "JFJExtension-umbrella.h"
 
   export *
