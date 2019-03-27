@@ -48,7 +48,7 @@
 		D673D37165C8F18AB37702CC /* Pods-JFJExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JFJExtension_Tests.release.xcconfig"; path = "Target Support Files/Pods-JFJExtension_Tests/Pods-JFJExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DEA9BF92960036F3313802EC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E9208717222FAC8A000B48D4 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
-		F29199C39D97C29FCFFA38E6 /* JFJExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JFJExtension.podspec; path = ../JFJExtension.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F29199C39D97C29FCFFA38E6 /* JFJExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JFJExtension.podspec; path = ../JFJExtension.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
