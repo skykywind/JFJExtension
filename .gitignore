@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# OS X
-.DS_Store
-
-# Xcode
-build/
-=======
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -14,7 +7,6 @@ build/
 DerivedData/
 
 ## Various settings
->>>>>>> 8045d959d5a4a67e153d2861e7ef531eebf55734
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -24,18 +16,6 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
-<<<<<<< HEAD
-*.xccheckout
-profile
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-
-# Bundler
-.bundle
-
-=======
 
 ## Other
 *.moved-aside
@@ -70,22 +50,11 @@ playground.xcworkspace
 
 # Carthage
 #
->>>>>>> 8045d959d5a4a67e153d2861e7ef531eebf55734
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
 Carthage/Build
 
-<<<<<<< HEAD
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
-# Note: if you ignore the Pods directory, make sure to uncomment
-# `pod install` in .travis.yml
-#
-# Pods/
-=======
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
@@ -97,4 +66,3 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
->>>>>>> 8045d959d5a4a67e153d2861e7ef531eebf55734
