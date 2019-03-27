@@ -1,4 +1,4 @@
-framework module Pods_JFJExtension_Example {
+module Pods_JFJExtension_Example {
   umbrella header "Pods-JFJExtension_Example-umbrella.h"
 
   export *
