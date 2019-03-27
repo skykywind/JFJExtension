@@ -20,6 +20,7 @@ class ViewController: UIViewController {
                 $0.addRounded(radius: 10, corners: [.topLeft, .bottomRight])
                 $0.backgroundColor = UIColor.red
         }
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -24,7 +24,7 @@ JFJExtension is an extension to some common classes in the UIKit and Foundation 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'JFJExtension/Classes/**/*'
-  s.swift_version    = '4.2'
+  s.swift_version = '4.2'
   # s.resource_bundles = {
   #   'JFJExtension' => ['JFJExtension/Assets/*.png']
   # }
@@ -32,4 +32,5 @@ JFJExtension is an extension to some common classes in the UIKit and Foundation 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'SnapKit'
+  
 end
