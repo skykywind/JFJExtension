@@ -126,7 +126,7 @@ public extension UIView {
 }
 
 
-extension UIView {
+public extension UIView {
     
     @discardableResult
     public func addTo(_ superView: UIView) -> Self {
