@@ -1,5 +1,6 @@
 # JFJExtension
-<<<<<<< HEAD
+
+JFJExtension complements the UIKit and Foundation frameworks, simplifies system method calls and helps us develop projects faster. At the same time, some extensions will make the Swift code cleaner and beautiful.
 
 [![CI Status](https://img.shields.io/travis/skykywind/JFJExtension.svg?style=flat)](https://travis-ci.org/skykywind/JFJExtension)
 [![Version](https://img.shields.io/cocoapods/v/JFJExtension.svg?style=flat)](https://cocoapods.org/pods/JFJExtension)
@@ -9,6 +10,31 @@
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## Cases
+### 创建UIView及其子类
+```Swift
+_ = UIView()
+    .addTo(view)
+    .config {
+        $0.x = 100
+        $0.y = 100
+        $0.size = CGSize(width: 100, height: 100)
+        $0.backgroundColor = UIColor.red
+    }
+    
+ _ = UILabel()
+     .addTo(view)
+     .config {
+        $0.text = "Hello JFJExtion"
+        $0.font = UIFont.systemFont(ofSize: 14)
+        $0.textColor = .red
+     } 
+     .layout {
+        $0.top.equalToSuperview().offset(300)
+        $0.centerX.equalToSuperview()
+     }
+ ```
 
 ## Requirements
 
@@ -28,6 +54,3 @@ skykywind, 824214765@qq.com
 ## License
 
 JFJExtension is available under the MIT license. See the LICENSE file for more info.
-=======
-An extension library for iOS UIKit and Foundation classes.
->>>>>>> 8045d959d5a4a67e153d2861e7ef531eebf55734
