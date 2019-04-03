@@ -9,7 +9,7 @@ import UIKit
 
 public extension UITableViewCell {
     
-    public static var iden: String {
+    static var iden: String {
         return self.description().components(separatedBy: ".").last!
     }
 }

@@ -15,14 +15,14 @@ public extension UIColor {
     ///   - r: red
     ///   - g: green
     ///   - b: blue
-    public convenience init(r: CGFloat, g: CGFloat, b: CGFloat, alpha: CGFloat = 1.0) {
+    convenience init(r: CGFloat, g: CGFloat, b: CGFloat, alpha: CGFloat = 1.0) {
         self.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: alpha)
     }
     
     /// 16进制颜色值构造方法
     ///
     /// - Parameter hexString: 16进制颜色, 例如 #ffffff， 0Xab00ee, 0xeeeeee, 333333
-    public convenience init(hexString: String) {
+    convenience init(hexString: String) {
         
         guard hexString.count >= 6 else {
             self.init(r: 255, g: 255, b: 255)
@@ -59,7 +59,7 @@ public extension UIColor {
     /// 获取随机颜色
     ///
     /// - Returns: UIColor
-    public class func getRandomColor() -> UIColor {
+    class func getRandomColor() -> UIColor {
         return UIColor(red: CGFloat(arc4random_uniform(256))/255.0, green: CGFloat(arc4random_uniform(256))/255.0, blue: CGFloat(arc4random_uniform(256))/255.0, alpha: 1.0)
     }
     

@@ -9,7 +9,7 @@ import UIKit
 
 public extension UICollectionViewCell {
     
-    public static var iden: String {
+    static var iden: String {
         return self.description().components(separatedBy: ".").last!
     }
 }

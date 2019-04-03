@@ -214,6 +214,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = PT766GK6EA;
 						LastSwiftMigration = 1010;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -468,7 +469,7 @@
 			baseConfigurationReference = 80B5707E203359586A4D2D7D /* Pods-JFJExtension_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PT766GK6EA;
 				INFOPLIST_FILE = JFJExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -483,7 +484,7 @@
 			baseConfigurationReference = 04E2F2CF88560D05CD7091B7 /* Pods-JFJExtension_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = PT766GK6EA;
 				INFOPLIST_FILE = JFJExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
