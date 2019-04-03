@@ -74,13 +74,19 @@ public extension UIView {
     }
     
     // MARK: - 尺寸裁剪相关
-    /// 添加圆角  radius: 圆角半径
+    /// 添加圆角
+    ///
+    /// - Parameter radius: 圆角半径
     func addRounded(radius:CGFloat) {
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
     }
     
-    /// 添加部分圆角(有问题右边且不了) corners: 需要实现为圆角的角，可传入多个 radius: 圆角半径
+    /// 添加部分圆角
+    ///
+    /// - Parameters:
+    ///   - radius: 圆角半径
+    ///   - corners: 需要实现为圆角的角
     func addRounded(radius:CGFloat, corners: UIRectCorner) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let mask = CAShapeLayer()
@@ -88,13 +94,15 @@ public extension UIView {
         layer.mask = mask;
     }
     
-    // MARK: - 添加边框
-    /// 添加边框 width: 边框宽度 borderColor:边框颜色
-    func addBorder(width : CGFloat, borderColor : UIColor = .black) { // 颜色自己给
+    /// 添加边框
+    ///
+    /// - Parameters:
+    ///   - width: 边框宽度
+    ///   - borderColor: 边框颜色
+    func addBorder(width : CGFloat, borderColor : UIColor = .black) {
         self.layer.borderWidth = width;
         self.layer.borderColor = borderColor.cgColor;
     }
-    
     
     /// 添加阴影
     ///
@@ -127,12 +135,20 @@ public extension UIView {
 
 public extension UIView {
     
+    /// 设置父视图
+    ///
+    /// - Parameter superView: 父视图对象
+    /// - Returns: self
     @discardableResult
     func addTo(_ superView: UIView) -> Self {
         superView.addSubview(self)
         return self
     }
     
+    /// 设置约束
+    ///
+    /// - Parameter snapKitMaker: snapKitMaker对象
+    /// - Returns: self
     @discardableResult
     func layout(_ snapKitMaker: (ConstraintMaker) -> Void) -> Self {
         self.snp.makeConstraints { (make) in
@@ -148,11 +164,16 @@ extension UIView: ViewChainable {}
 public protocol ViewChainable {}
 public extension ViewChainable where Self: UIView {
 
+    /// 设置样式
+    ///
+    /// - Parameter config: 统一设置视图样式的block
+    /// - Returns: self
     @discardableResult
     func config(_ config: (Self) -> Void) -> Self {
         config(self)
         return self
     }
+    
 }
 
 

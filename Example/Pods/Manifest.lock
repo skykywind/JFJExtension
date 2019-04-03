@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - JFJExtension (1.0.1):
+  - JFJExtension (1.0.2):
     - SnapKit
   - SnapKit (4.2.0)
 
@@ -23,9 +23,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JFJExtension: 6620ae155aad8320af7530398aa7f40b415a9b5b
+  JFJExtension: ed7d7d5ffb429d5dacdf6fe134e705d0cb1fa081
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 1c5f5d487c2810626bf44e9aa77c2a6e21d7f90a
+PODFILE CHECKSUM: 6f73d15437286a2c483074dcd13a5a86d329f3d8
 
 COCOAPODS: 1.7.0.beta.2
