@@ -19,7 +19,7 @@ public extension UIDevice {
         }
     }
     
-    static var sceenWidth: CGFloat {
+    static var screenWidth: CGFloat {
         return UIScreen.main.bounds.width
     }
 
@@ -42,5 +42,5 @@ public extension UIDevice {
     static var adaptTabHeight: CGFloat {
         return isProfiledScreen ? 34 : 0
     }
-    
+  
 }
