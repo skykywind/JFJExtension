@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 public extension UIView {
-    // MARK: - 尺寸相关
+
     var x:CGFloat {
         get {
             return self.frame.origin.x
@@ -73,20 +73,47 @@ public extension UIView {
         }
     }
     
-    // MARK: - 尺寸裁剪相关
-    /// 添加圆角
-    ///
-    /// - Parameter radius: 圆角半径
+    var left: CGFloat {
+        get {
+            return x
+        }
+        set {
+            x = newValue
+        }
+    }
+    
+    var top: CGFloat {
+        get {
+            return y
+        }
+        set {
+            y = newValue
+        }
+    }
+    
+    var right: CGFloat {
+        get {
+            return left + width
+        }
+        set {
+            left = newValue - width
+        }
+    }
+    
+    var bottom: CGFloat {
+        get {
+            return top + height
+        }
+        set {
+            top = newValue - height
+        }
+    }
+    
     func addRounded(radius:CGFloat) {
         self.layer.cornerRadius = radius
         self.layer.masksToBounds = true
     }
-    
-    /// 添加部分圆角
-    ///
-    /// - Parameters:
-    ///   - radius: 圆角半径
-    ///   - corners: 需要实现为圆角的角
+
     func addRounded(radius:CGFloat, corners: UIRectCorner) {
         let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
         let mask = CAShapeLayer()
@@ -94,23 +121,11 @@ public extension UIView {
         layer.mask = mask;
     }
     
-    /// 添加边框
-    ///
-    /// - Parameters:
-    ///   - width: 边框宽度
-    ///   - borderColor: 边框颜色
     func addBorder(width : CGFloat, borderColor : UIColor = .black) {
         self.layer.borderWidth = width;
         self.layer.borderColor = borderColor.cgColor;
     }
-    
-    /// 添加阴影
-    ///
-    /// - Parameters:
-    ///   - color: 阴影颜色
-    ///   - opacity: 阴影透明度
-    ///   - offset: 阴影偏移量
-    ///   - radius: 阴影圆角半径
+
     func addShadow(color: UIColor = .black, opacity: Float = 0.1, offset: CGSize = .zero, radius: CGFloat = 1) {
         self.layer.shadowColor = color.cgColor
         self.layer.shadowOpacity = opacity
@@ -119,8 +134,6 @@ public extension UIView {
         self.layer.masksToBounds = false
     }
     
-    // MARK: - 视图控制器
-    /// View的视图控制器
     var viewController: UIViewController? {
         for view in sequence(first: self.superview, next: { $0?.superview }) {
             if let responder = view?.next {
@@ -135,10 +148,6 @@ public extension UIView {
 
 public extension UIView {
     
-    /// 设置父视图
-    ///
-    /// - Parameter superView: 父视图对象
-    /// - Returns: self
     @discardableResult
     func addTo(_ superView: UIView) -> Self {
         superView.addSubview(self)

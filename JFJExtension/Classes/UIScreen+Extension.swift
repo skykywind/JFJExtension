@@ -7,7 +7,7 @@
 
 import UIKit
 
-public extension UIDevice {
+public extension UIScreen {
     
     /// 是否是“刘海”屏幕
     static var isProfiledScreen: Bool {
@@ -44,3 +44,5 @@ public extension UIDevice {
     }
   
 }
+
+
