@@ -17,9 +17,12 @@ class ViewController: UIViewController {
         _ = UIView(frame: CGRect(x: 100, y: 100, width: 100, height: 100))
             .addTo(view)
             .config {
-                $0.addRounded(radius: 10, corners: [.topLeft, .bottomRight])
+                $0.addRounded(radius: 10, corners: [.topLeft, .topRight])
                 $0.backgroundColor = UIColor.red
-        }
+            }.layout({ (make) in
+                make.left.top.equalToSuperview().offset(100)
+                make.width.height.equalTo(200)
+            })
         _ = UILabel()
             .addTo(view)
             .config({ (label) in
