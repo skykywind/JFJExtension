@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JFJExtension'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'JFJExtension is an extension to some common classes in the UIKit and Foundation frameworks.'
   s.description      = <<-DESC
 JFJExtension is an extension to some common classes in the UIKit and Foundation frameworks. I added many common functions to the system classes, so we can use it more convenience.
