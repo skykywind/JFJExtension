@@ -1,5 +1,5 @@
 PODS:
-  - JFJExtension (1.0.5):
+  - JFJExtension (1.0.6):
     - SnapKit
   - SnapKit (5.0.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  JFJExtension: 03064138ef255412d8bbdf8c367785447f9a7050
+  JFJExtension: fb53565cc624572561d7fc8e5deba5cf37babd16
   SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
 PODFILE CHECKSUM: 4aac5aa826ed26531e702534191864ebd5af358a

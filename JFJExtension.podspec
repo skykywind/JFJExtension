@@ -19,7 +19,7 @@ JFJExtension is an extension to some common classes in the UIKit and Foundation 
   s.author           = { 'skykywind' => 'jiafujia123@gmail.com' }
   s.source           = { :git => 'https://github.com/skykywind/JFJExtension.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'JFJExtension/Classes/**/*'
   s.swift_version = '4.2', '5.0'
