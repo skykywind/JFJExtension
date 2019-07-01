@@ -1,20 +1,13 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - JFJExtension (1.0.2):
+  - JFJExtension (1.0.5):
     - SnapKit
-  - SnapKit (4.2.0)
+  - SnapKit (5.0.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - JFJExtension (from `../`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -22,10 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  JFJExtension: ed7d7d5ffb429d5dacdf6fe134e705d0cb1fa081
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  JFJExtension: 03064138ef255412d8bbdf8c367785447f9a7050
+  SnapKit: fd22d10eb9aff484d79a8724eab922c1ddf89bcf
 
-PODFILE CHECKSUM: 6f73d15437286a2c483074dcd13a5a86d329f3d8
+PODFILE CHECKSUM: 4aac5aa826ed26531e702534191864ebd5af358a
 
-COCOAPODS: 1.7.0.beta.2
+COCOAPODS: 1.7.2

@@ -6,7 +6,6 @@ target 'JFJExtension_Example' do
 
   target 'JFJExtension_Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
+    
   end
 end
